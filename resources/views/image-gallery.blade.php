@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Gallery Example</title>
+    <title>Pencak Silat Gallery</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- References: https://github.com/fancyapps/fancyBox -->
@@ -32,7 +32,7 @@
 
 <div class="container">
 
-    <h3>Laravel - Image Gallery CRUD Example</h3>
+    <h3>Pencak Silat - Gallery</h3>
     <form action="{{ url('image-gallery') }}" class="form-image-upload" method="POST" enctype="multipart/form-data">
 
         {!! csrf_field() !!}
