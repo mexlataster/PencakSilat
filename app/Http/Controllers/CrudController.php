@@ -20,8 +20,5 @@ class CrudController extends Controller
                      'message'=>$r->message]);
                      return back();
     }
-    public function test()
-    {
-      return'test';
-    }
+    
 }
