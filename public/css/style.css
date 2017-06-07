@@ -1,0 +1,56 @@
+body{
+	background-image: url("/images/Silat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:-100;
+
+}
+
+img.head{
+  border-radius: 100px;
+  max-height:60px;
+  margin-left:15px;
+  margin-top:5px;
+}
+
+h1{
+  color:white;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.menu{
+  border:1px solid grey;
+  margin-top:20px;
+  height:75px;
+  width:auto;
+  border-radius: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width:1100px;
+}
+
+.links{
+  display:inline;
+  margin-left: 300px;
+  height:75px;
+}
+
+.content{
+	text-align: center;
+}
+
+.title{
+	margin-top:100px;
+	font-family: bold;
+	font-size: 48px;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
