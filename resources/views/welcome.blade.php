@@ -85,6 +85,8 @@
                 <div class="title m-b-md">
                     <a href="{{ url('/getInsert') }}">Contact
                     </a>
+                    <a href="{{ url('/image-gallery') }}">Gallerij
+                    </a>
 
                 </div>
 
