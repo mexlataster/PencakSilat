@@ -56,7 +56,7 @@
                       </tr>
                       <tr>
                           <td>Message</td>
-                          <td><input type="text" name="message" id="message" class="message"></td>
+                          <td><input type="textarea" name="message" id="message" class="message"></td>
                       </tr>
                   </table>
                   <hr>
