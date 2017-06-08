@@ -24,3 +24,11 @@ Route::get('contact',
   ['as' => 'contact', 'uses' => 'AboutController@create']);
 Route::post('contact',
   ['as' => 'contact_store', 'uses' => 'AboutController@store']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
