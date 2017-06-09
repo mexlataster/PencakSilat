@@ -16,11 +16,15 @@
                 .container{
                   background: #fff;
                   box-shadow: 0px, 0px, 10px, gray;
-                  padding:10 px;
+                  padding:10px;
                 }
                 .message{
                   min-height:100px;
 
+                }
+
+                .information{
+                	float: left;
                 }
                 h1, td{
                   background-color: #fff;
@@ -28,7 +32,11 @@
                   font-family: 'Raleway', sans-serif;
                   font-weight: 100;
                 }
-                #mapid { height: 180px; }
+                #mapid {
+                height: 180px;
+                }
+
+
 
 
 
@@ -61,6 +69,9 @@
                   </table>
                   <hr>
                     <input type="submit" value="Submit">
+
+
+
             </form>
                 <div id='map' style='width: 600px; height: 500px;'></div>
                   <script>
@@ -69,6 +80,8 @@
                       container: 'map',
                       style: 'mapbox://styles/mapbox/satellite-streets-v9'
                       });
+                      
+
                   </script>
 
         </div>

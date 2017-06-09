@@ -1,17 +1,15 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
+  </head>
+  <body>
+        <a href="../"><img src="/images/head.png" class="head"></a>
+        <div class="graduatiesysteem">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
         </div>
-    </div>
-</div>
-@endsection
+  </body>
+</html>
