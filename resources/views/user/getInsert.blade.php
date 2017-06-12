@@ -35,6 +35,12 @@
                 #mapid {
                 height: 180px;
                 }
+                .h1{
+                  background-color: #fff;
+                  color: #636b6f;
+                  font-family: 'Raleway', sans-serif;
+                  font-weight: 100;
+                }
 
 
 
@@ -48,11 +54,20 @@
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
 
   <body>
+
+    <form  action="{{ url('postInsert')}}" method="GET">
+      @if(Session::has('flash_message'))
+        <div class="h1"><span class="glyphicon glyphicon-ok"></span><em> {!! session('flash_message') !!}</em></div>
+    @endif
+    </form>
+
+
         <div class="container">
           <h1>Contact Page</h1>
           <hr>
             <form action="{{ url('postInsert')}}" method="POST">
                {{ csrf_field() }}
+
                   <table>
                       <tr>
                           <td>Name</td>
@@ -72,6 +87,7 @@
 
 
 
+
             </form>
                 <div id='map' style='width: 600px; height: 500px;'></div>
                   <script>
@@ -80,7 +96,7 @@
                       container: 'map',
                       style: 'mapbox://styles/mapbox/satellite-streets-v9'
                       });
-                      
+
 
                   </script>
 

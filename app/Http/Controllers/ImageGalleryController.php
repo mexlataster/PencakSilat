@@ -28,7 +28,7 @@ class ImageGalleryController extends Controller
     {
     	$this->validate($request, [
     		'title' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,mp4|max:2048',
         ]);
 
         $input['image'] = time().'.'.$request->image->getClientOriginalExtension();

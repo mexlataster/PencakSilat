@@ -9,6 +9,7 @@ class CrudController extends Controller
 {
     public function getInsert()
     {
+
       return view('user.getInsert',compact('roles'));
     }
 
@@ -18,7 +19,11 @@ class CrudController extends Controller
       Contact::insert(['name'=>$r->name,
                     'email'=>$r->email,
                      'message'=>$r->message]);
+      \Session::flash('flash_message','Your email has been send! We hope to Contact you as soon as possible.');
                      return back();
+
+
+
     }
-    
+
 }
