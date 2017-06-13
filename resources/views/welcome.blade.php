@@ -1,5 +1,5 @@
 <!doctype html>
-    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,6 @@
     </head>
     <body>
       <div class="layer">
-
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
