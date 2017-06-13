@@ -21,12 +21,22 @@
         background: #e8e8e8 none repeat scroll 0 0;
         padding: 15px;
     }
+    .layer {
+        background-color:rgba(0,0,0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
     </style>
   </head>
   <body>
-
-      <div class="title">
-        <h2>Image Gallery</h2>
+      <div class="layer">
+        <a href="../"><img src="/images/head.png" class="head"></a>
+        <div class="title">
+          <h2>Image Gallery</h2>
+        </div>
       </div>
 
 
