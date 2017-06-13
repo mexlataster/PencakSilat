@@ -15,15 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/normalgallery', function () {
+    return view('normalgallery');
+});
+
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('image-gallery', 'ImageGalleryController@index');
 Route::post('image-gallery', 'ImageGalleryController@upload');
 Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
-Route::get('contact',
-  ['as' => 'contact', 'uses' => 'AboutController@create']);
-Route::post('contact',
-  ['as' => 'contact_store', 'uses' => 'AboutController@store']);
+
+
 
 Auth::routes();
 

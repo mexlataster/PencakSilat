@@ -25,14 +25,11 @@
             <div class="menu">
                   <a href="../"><img src="/images/head.png" class="head"></a>
               <div class="links">
-
                   <a href="{{ url('/getInsert') }}">Contact</a>
-
-                  <a href="{{ url('/image-gallery') }}">Gallerij</a>
-
+                  <a href="{{ url('/normalgallery') }}">Normal Gallery</a>
+                  <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
                   <a href="{{ url('/login') }}">Login</a>
                   <a href="{{ url('/register') }}">Register</a>
-
               </div>
             </div>
 

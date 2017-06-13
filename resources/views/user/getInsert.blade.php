@@ -25,6 +25,10 @@
 
                 .information{
                 	float: left;
+                  background-color: #fff;
+                  color: #636b6f;
+                  font-family: 'Raleway', sans-serif;
+                  font-weight: 100;
                 }
                 h1, td{
                   background-color: #fff;
@@ -32,9 +36,15 @@
                   font-family: 'Raleway', sans-serif;
                   font-weight: 100;
                 }
-                #mapid {
-                height: 180px;
+                img.head{
+                	padding:2px;
+                  border-radius:10px;
+                  margin-left:15px;
+                	width:200px;
+                	background-color:rgba(255,255,255, 0.1);
                 }
+
+
 
 
 
@@ -48,6 +58,15 @@
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
 
   <body>
+    <a href="../"><img src="/images/head.png" class="head"></a>
+
+    <form  action="{{ url('postInsert')}}" method="GET">
+      @if(Session::has('flash_message'))
+        <div class="h1"><span class="glyphicon glyphicon-ok"></span><em> {!! session('flash_message') !!}</em></div>
+    @endif
+    </form>
+
+
         <div class="container">
           <h1>Contact Page</h1>
           <hr>
@@ -69,21 +88,15 @@
                   </table>
                   <hr>
                     <input type="submit" value="Submit">
-
-
-
             </form>
-                <div id='map' style='width: 600px; height: 500px;'></div>
+                <div id='map' style='width: 600px; height: 500px;, margin-top:40px;'></div>
                   <script>
                       mapboxgl.accessToken = 'pk.eyJ1IjoibWV4aWVtb25zdGVyIiwiYSI6ImNqM2UyeHl0aTAwMDgzM3A3a3p5M3JxamgifQ.V6MorPyKRZCeOo_AbsckpQ';
                       var map = new mapboxgl.Map({
                       container: 'map',
                       style: 'mapbox://styles/mapbox/satellite-streets-v9'
                       });
-                      
-
                   </script>
-
         </div>
   </body>
 </html>
