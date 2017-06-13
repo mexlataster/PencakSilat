@@ -21,9 +21,10 @@ body{
 .links>a:hover{
 	margin-right:125px;
 	font-size:20px;
-	background-color:rgba(255,0,0, 0.9);
+	background-color:rgba(255,0,0, 0.5);
 	padding:5px;
 	border-radius: 15px;
+	border:1px solid red;
 }
 
 .text>h3{
@@ -62,8 +63,8 @@ a{
 
 img.head{
 	padding:2px;
-  border-radius:10px;
-  margin-left:15px;
+  	border-radius:10px;
+  	margin-left:15px;
 	width:200px;
 
 }
@@ -93,7 +94,7 @@ img.head{
 
 .links{
   display:inline;
-  margin-left: 225px;;
+  margin-left: 125px;;
 	position: fixed;
 	margin-top: 25px;
 }
