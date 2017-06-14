@@ -6,20 +6,20 @@
             <div class="menu">
                   <a href="../"><img src="/images/head.png" class="head"></a>
               <div class="links">
-                  <a href="{{ url('/getInsert') }}">Contact</a>
-                  <a href="{{ url('/normalgallery') }}">Normal Gallerij</a>
+                  <a href="{{ url('/normalgallery') }}">Normale Gallerij</a>
                   <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
                   <a href="{{ url('/login') }}">Login</a>
-                  <a href="{{ url('/register') }}">Register</a>
+                  <a href="{{ url('/register') }}">Registreren</a>
+                  <a href="{{ url('/getInsert') }}">Contact</a>
               </div>
             </div>
     <div class="container" id="login-container">
         <h1 style="text-align: center;">Login</h1><br>
-            <form class="login-form" role="form" method="POST" action="{{ route('login') }}">
+            <form class="center-form" role="form" method="POST" action="{{ route('login') }}">
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                    <h4>E-Mail Address:</h4>
-                <input style="" id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
+                    <h4>E-Mailadres:</h4>
+                <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
                     @if ($errors->has('email'))
                         <span class="help-block">
                             <strong>{{ $errors->first('email') }}</strong>
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <h4>Password:</h4>
+                    <h4>Wachtwoord:</h4>
                 <input id="password" type="password" name="password" required>
                     @if ($errors->has('password'))
                         <span>
@@ -47,9 +47,9 @@
                     <button type="submit" class="submit-button">
                         Login
                     </button>
-                    <br><br>
+                    <br><br><br>
                     <a href="{{ route('password.request') }}">
-                        Forgot Your Password?
+                        Wachtwoord vergeten?
                     </a>
             </form>
     </div>

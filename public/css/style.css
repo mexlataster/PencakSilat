@@ -151,13 +151,23 @@ img.head{
 }
 
 .submit-button{
-	width:100px;
-	height:25px;
+	width:125px;
+	height:30px;
 	background-color:rgba(255, 0, 0, 0.6);
-	border: 1px solid black;
 	color:white;
 	border-radius: 7px;
 	border: 1px solid red;
+	cursor: pointer;
+}
+
+.submit-button:hover{
+	width:125px;
+	height:30px;
+	background-color:rgba(255, 0, 0, 0.7);
+	color:white;
+	border-radius: 7px;
+	border: 1px solid red;
+	cursor: pointer;
 }
 
 #map{
@@ -177,16 +187,12 @@ img.head{
 /*End of Contact Page CSS*/
 /*Login Page CSS*/
 
-.input-box{
-	width:20%;
-}
-
 #login-container{
 	background-color: rgba(255,255,255,0.0) !important;
 	
 }
 
-.login-form{
+.center-form{
 	text-align: center;
 }
 

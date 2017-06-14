@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Contact Page</title>
+    <title>Contact Pagina</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
   integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
@@ -18,11 +18,11 @@
       <div class="menu">
           <a href="../"><img src="/images/head.png" class="head"></a>
         <div class="links">
-            <a href="{{ url('/getInsert') }}">Contact</a>
-            <a href="{{ url('/normalgallery') }}">Normal Gallerij</a>
+            <a href="{{ url('/normalgallery') }}">Normale Gallerij</a>
             <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
             <a href="{{ url('/login') }}">Login</a>
-            <a href="{{ url('/register') }}">Register</a>
+            <a href="{{ url('/register') }}">Registreren</a>
+            <a href="{{ url('/getInsert') }}">Contact</a>
         </div>
       </div>
 
@@ -34,20 +34,20 @@
               @endif
             </form>
             <div class="text-input">
-              <h1>Contact Page</h1>
+              <h1>Contact Pagina</h1>
                 <form action="{{ url('postInsert')}}" method="POST">
                    {{ csrf_field() }}
                       <table>
                           <tr>
-                              <td>Name:</td>
+                              <td>Naam:</td>
                               <td><input type="text" name="name" id="name"></td>
                           </tr>
                           <tr>
-                              <td>Email adress:</td>
+                              <td>E-mailadres:</td>
                               <td><input type="email" name="email" id="email"></td>
                           </tr>
                           <tr>
-                              <td>Message:</td>
+                              <td>Bericht:</td>
                               <td><textarea rows="4" cols="50" name="message" id="message" class="message"></textarea></td>
                           </tr>
                       </table>
