@@ -30,7 +30,7 @@
           <div class="container">
             <form  action="{{ url('postInsert')}}" method="GET">
               @if(Session::has('flash_message'))
-                <div class="h1"><span class="glyphicon glyphicon-ok"></span> <em> {!! session('flash_message') !!}</em></div>
+                <div class="h1" style="text-align: center;"><span class="glyphicon glyphicon-ok"></span> <em> {!! session('flash_message') !!}</em></div>
               @endif
             </form>
             <div class="text-input">
