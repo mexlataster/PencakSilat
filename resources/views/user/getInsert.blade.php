@@ -38,15 +38,15 @@
                    {{ csrf_field() }}
                       <table>
                           <tr>
-                              <td>Name</td>
+                              <td>Name:</td>
                               <td><input type="text" name="name" id="name"></td>
                           </tr>
                           <tr>
-                              <td>Email adress</td>
+                              <td>Email adress:</td>
                               <td><input type="email" name="email" id="email"></td>
                           </tr>
                           <tr>
-                              <td>Message</td>
+                              <td>Message:</td>
                               <td><textarea rows="4" cols="50" name="message" id="message" class="message"></textarea></td>
                           </tr>
                       </table>

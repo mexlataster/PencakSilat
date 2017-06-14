@@ -140,7 +140,7 @@ img.head{
   width: 900px;
   height: 650px;
   z-index: 15;
-  top: 15%;
+  top: 20%;
   left: 25%;
   border:1px solid white;
 }
@@ -175,3 +175,19 @@ img.head{
 }
 
 /*End of Contact Page CSS*/
+/*Login Page CSS*/
+
+.input-box{
+	width:20%;
+}
+
+#login-container{
+	background-color: rgba(255,255,255,0.0) !important;
+	
+}
+
+.login-form{
+	text-align: center;
+}
+
+/*End of Login Page CSS*/
