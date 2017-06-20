@@ -27,11 +27,10 @@ Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
 
 
 
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('protected', ['middleware' => ['auth', 'admin'], function() { return "this page requires that you be logged in and an Admin"; }]);
-
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
