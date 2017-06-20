@@ -20,20 +20,18 @@
                 </div>
             @endif
 
-
-
             <div class="menu">
                   <a href="../"><img src="/images/head.png" class="head"></a>
               <div class="links">
-                  <a href="{{ url('/getInsert') }}">Contact</a>
-                  <a href="{{ url('/normalgallery') }}">Normal Gallery</a>
+                  <a href="{{ url('/normalgallery') }}">Normale Gallerij</a>
                   <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
                   <a href="{{ url('/login') }}">Login</a>
                   <a href="{{ url('/register') }}">Register</a>
+                  <a href="{{ url('/getInsert') }}">Contact</a>
               </div>
             </div>
 
-          <div class="content">
+          <div class="main">
               <div class="title">
                   <h2>Pencak Silat</h2>
               </div><hr>
