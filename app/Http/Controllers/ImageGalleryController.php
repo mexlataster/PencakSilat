@@ -16,7 +16,16 @@ class ImageGalleryController extends Controller
     public function index()
     {
     	$images = ImageGallery::get();
+
+
     	return view('image-gallery',compact('images'));
+      
+    }
+
+    public function index2()
+    {
+      $images = ImageGallery::get();
+      return view('normalgallery', compact('images'));
     }
 
     /**
