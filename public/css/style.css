@@ -177,8 +177,20 @@ img.head{
 }
 
 .text-input{
-	margin-left: auto;
+	margin-left: 33%;
   width: 650px;
+
+}
+
+.contact-info{
+	float:left;
+	width:30%;
+	margin-top:100px;
+}
+
+#mapid{
+		border-radius: 8px;
+	margin-top:15px;
 }
 
 .submit-button{

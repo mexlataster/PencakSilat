@@ -33,6 +33,17 @@
                 <div class="h1" style="text-align: center;"><span class="glyphicon glyphicon-ok"></span> <em> {!! session('flash_message') !!}</em></div>
               @endif
             </form>
+            <div class="contact-info">
+                <h3>Welkom op de Contact Pagina</h3>
+                   Met het formulier hiernaast kunt u uw vragen aan ons kwijt</p><br>
+
+                <h3>Lestijden:</h3> 
+                <p>Iedere woensdag van 19:00 tot 20:30</p><br>
+
+                <h3>Adres:</h3> 
+                <p>(Gymzaal Bavinkschool)<br>
+                Kolfstraat tegenover<br> parkeergarage Drie Vriendenhof</p><br>
+            </div>
             <div class="text-input">
               <h1>Contact Pagina</h1>
                 <form action="{{ url('postInsert')}}" method="POST">
@@ -57,15 +68,17 @@
             </div>
           </div>
     </div>
-    <script>
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    <div class="map">
+      <script>
+      var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-  	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-  		maxZoom: 18,
-  		
-  		id: 'mapbox.streets'
-  	}).addTo(mymap);
+    	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    		maxZoom: 18,
+    		
+    		id: 'mapbox.streets'
+    	}).addTo(mymap);
 
-    </script>
+      </script>
+    </div>
   </body>
 </html>
