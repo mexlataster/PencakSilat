@@ -10,9 +10,6 @@
    crossorigin=""></script>
 
   </head>
-
-
-
   <body>
     <div class="layer">
       <div class="menu">
@@ -37,10 +34,10 @@
                 <h3>Welkom op de Contact Pagina</h3>
                    Met het formulier hiernaast kunt u uw vragen aan ons kwijt</p><br>
 
-                <h3>Lestijden:</h3> 
+                <h3>Lestijden:</h3>
                 <p>Iedere woensdag van 19:00 tot 20:30</p><br>
 
-                <h3>Adres:</h3> 
+                <h3>Adres:</h3>
                 <p>(Gymzaal Bavinkschool)<br>
                 Kolfstraat tegenover<br> parkeergarage Drie Vriendenhof</p><br>
             </div>
@@ -70,11 +67,12 @@
     </div>
     <div class="map">
       <script>
-      var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      var mymap = L.map('mapid').setView([51.813816, 4.669590], 20);
+      var marker = L.marker([51.813816, 4.669590]).addTo(mymap);
 
     	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     		maxZoom: 18,
-    		
+
     		id: 'mapbox.streets'
     	}).addTo(mymap);
 
