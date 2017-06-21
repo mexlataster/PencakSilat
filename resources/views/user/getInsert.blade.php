@@ -1,17 +1,19 @@
 <!DOCTYPE html>
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+  integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+  crossorigin=""/>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Contact Pagina</title>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+   crossorigin=""></script>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
-  integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
-  crossorigin=""/>
   </head>
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet'/>
+
 
   <body>
     <div class="layer">
@@ -53,15 +55,7 @@
                       </table>
                   <input type="submit" value="Submit" class="submit-button">
                 </form>
-            </div>
-            <div id='map'></div>
-              <script>
-                  mapboxgl.accessToken = 'pk.eyJ1IjoibWV4aWVtb25zdGVyIiwiYSI6ImNqM2UyeHl0aTAwMDgzM3A3a3p5M3JxamgifQ.V6MorPyKRZCeOo_AbsckpQ';
-                  var map = new mapboxgl.Map({
-                  container: 'map',
-                  style: 'mapbox://styles/mapbox/satellite-streets-v9'
-                  });
-              </script>
+                <div id="mapid"></div>
             </div>
           </div>
     </div>

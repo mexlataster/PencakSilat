@@ -19,7 +19,7 @@ class ImageGalleryController extends Controller
 
 
     	return view('image-gallery',compact('images'));
-      
+
     }
 
     public function index2()

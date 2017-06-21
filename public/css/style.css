@@ -132,9 +132,30 @@ img.head{
 }
 /*End of Home Page CSS*/
 /*Normal Gallery CSS*/
-.picturebox{
-	
+
+.imagecontainer{
+  padding: 15px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
+  position: absolute;
+  width:1300px;
+  height: 900px;
+  z-index: 15;
+  top: 20%;
+  left: 25%;
+  border:1px solid white;
 }
+
+.img-responsive{
+	max-width: 250px;
+	display: inline;
+}
+
+.images{
+	width: 1300px;
+}
+
+/*End of Normal gallery CSS*/
 
 
 /*Contact Page CSS*/

@@ -42,7 +42,7 @@
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
+                        <li>Your picture is too big(please put in a smaller picture)</li>
                     @endforeach
                 </ul>
             </div>
@@ -87,6 +87,7 @@
                     <form action="{{ url('image-gallery',$image->id) }}" method="POST">
                     <input type="hidden" name="_method" value="delete">
                     {!! csrf_field() !!}
+
                     <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
                     </form>
                 </div> <!-- col-6 / end -->
@@ -96,6 +97,8 @@
         </div> <!-- list-group / end -->
     </div> <!-- row / end -->
 </div> <!-- container / end -->
+
+
 
 </body>
 <script type="text/javascript">
