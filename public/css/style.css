@@ -19,6 +19,7 @@ input, textarea{
 }
 
 /*Home Page CSS*/
+
 .links{
   display:inline;
   margin-left: 125px;;
@@ -90,13 +91,18 @@ img.head{
 }
 
 .layer {
-   background-color:rgba(0,0,0, 0.6);
+background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.2) 90%,
+    rgba(0, 0, 0, 0.05) 100%
+);
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
-
+   height:100%;
 }
 
 .text>button{
@@ -131,6 +137,46 @@ img.head{
 	font-family: bold;
 	font-size: 48px;
 }
+
+.info{
+background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 85%,
+    rgba(255, 255, 255, 0.2) 95%,
+    rgba(255, 255, 255, 0.005) 100%
+);
+	width:1170px;
+	padding:25px;
+	height:2000px;
+	color:black;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+	border-radius: 7px;
+	margin-top:-400px;
+	margin-bottom:75px;
+}
+
+.footer{
+	width:100%;
+	height:308px;
+	background-color: #2b2d36;
+	border-radius: 7px;
+}
+
+.footer-left{
+	padding-top:30px;
+	margin-left:75px;
+	width:300px;
+}
+
+.footer-right{
+  margin-left: 500px;
+  width:300px;
+}
+
 /*End of Home Page CSS*/
 /*Normal Gallery CSS*/
 

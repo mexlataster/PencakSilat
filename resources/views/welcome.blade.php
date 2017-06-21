@@ -47,6 +47,24 @@
             Hierbij bestudeerden zij het gedrag van dieren, met in het bijzonder de overlevingstechnieken.<br>
             Ook nu nog geven wij aan sommige technieken dierenbenamingen, zoals harimau of macan (tijger), ular (slang), monjet of keteh (aap) en manyang (wesp).
           </div>
+
+          <div class="footer">
+              <div class="footer-left">
+                  <h2>Contact</h2>
+                  <h3>Lestijden:</h3>
+                  <p>Iedere woensdag van 19:00 tot 20:30</p>
+
+                  <h3>Adres:</h3>
+                  <p>(Gymzaal Bavinkschool)<br>
+                  Kolfstraat tegenover<br> parkeergarage Drie Vriendenhof</p><br>
+              </div>
+
+              <div class="footer-right">
+                  <h2>Links</h2>
+
+              </div>
+          </div>
+
         </div>
       </div>
     </body>
