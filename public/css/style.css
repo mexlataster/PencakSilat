@@ -115,6 +115,7 @@ img.head{
 
 .main{
   margin-top:275px;
+  margin-bottom:700px;
 }
 
 .text{
@@ -147,12 +148,15 @@ img.head{
 }
 
 .img-responsive{
-	max-width: 250px;
-	display: inline;
+	margin:8px;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
 }
 
 .images{
-	width: 1300px;
+	max-width: 1250px;
+	display: -webkit-inline-box;
 }
 
 /*End of Normal gallery CSS*/

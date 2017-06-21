@@ -24,18 +24,16 @@
             </div>
             <div class="imagecontainer">
                 <div class="title">
-                    <h2>Normal Gallery</h2>
+                    <h4>Normal Gallery</h4>
                 </div><hr>
                 <br><br>
-              <div class="images">
                 @if($images->count())
                     @foreach($images as $image)
-                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                    <div class="images">
                         <a class="thumbnail fancybox" rel="ligthbox" href="/images/{{ $image->image }}">
                             <img class="img-responsive" alt="" src="/images/{{ $image->image }}" />
                             @endforeach
                         @endif
-                </div>
               </div>
             </div>
 
