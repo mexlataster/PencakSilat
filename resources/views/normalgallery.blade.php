@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
 
-    <!-- References: https://github.com/fancyapps/fancyBox -->
+    <!-- References: https://github.com/fancyapps/fancyBox --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
