@@ -19,13 +19,19 @@ Route::get('/normalgallery', function () {
     return view('normalgallery');
 });
 
+Route::get('/adminwelcome', function() {
+    return view('/adminwelcome');
+});
+
+
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('/image-gallery', 'ImageGalleryController@index');
 Route::post('/image-gallery', 'ImageGalleryController@upload');
 Route::delete('/image-gallery/{id}', 'ImageGalleryController@destroy');
-
 Route::get('normalgallery', 'ImageGalleryController@index2');
+Route::get('adminwelcome', 'AdminController@getInsert');
+
 
 
 
