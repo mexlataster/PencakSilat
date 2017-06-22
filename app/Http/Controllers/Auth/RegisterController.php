@@ -53,6 +53,7 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
             'adres' => 'required|string|max:255',
             'woontplaats' => 'required|string|max:255',
+            'user-type' => 'required|string|max:255',
         ]);
     }
 
@@ -70,6 +71,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
             'adres' => $data['adres'],
             'woontplaats' => $data['woontplaats'],
+            'user-type' => $data['user-type'],
         ]);
     }
 }

@@ -16,6 +16,7 @@
     <div class="container" id="login-container">
         <h1 style="text-align: center;">Registreren</h1><br>
             <form class="center-form" role="form" method="POST" action="{{ route('register') }}">
+                {{csrf_field()}}
 
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <h4>Naam:</h4>
@@ -37,15 +38,28 @@
                         @endif
                 </div>
 
-                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <h4>Wachtwoord:</h4>
-                        <input id="password" type="password" class="form-control" name="password" required>
-                        @if ($errors->has('password'))
-                            <span>
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
-                </div>
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
 
                         <div class="form-group{{ $errors->has('adres') ? ' has-error' : '' }}">
                             <label for="adres" class="col-md-4 control-label">Adres</label>
@@ -61,6 +75,8 @@
                             </div>
                         </div>
 
+                        
+
                         <div class="form-group{{ $errors->has('woontplaats') ? ' has-error' : '' }}">
                             <label for="woontplaats" class="col-md-4 control-label">Woonplaats</label>
 
@@ -73,13 +89,13 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>     
+                        </div> 
+                        //Hidden form om de user-type mee tegeven, wat standaard op normal staat.
+                        {{ Form::hidden('user-type', 'normal') }}
+                        <br>
 
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                <div>
                     <button type="submit" class="submit-button">
                         Registreer
                     </button>
