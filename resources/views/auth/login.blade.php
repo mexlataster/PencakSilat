@@ -16,7 +16,7 @@
     <div class="container" id="login-container">
         <h1 style="text-align: center;">Login</h1><br>
             <form class="center-form" role="form" method="POST" action="{{ route('login') }}">
-
+              {{ csrf_field() }}
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <h4>E-Mailadres:</h4>
                 <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
@@ -36,7 +36,7 @@
                         </span>
                     @endif
                 </div><br>
-                
+
                 <div>
                     <label>
                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
