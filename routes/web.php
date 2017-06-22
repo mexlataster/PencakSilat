@@ -29,7 +29,7 @@ Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('/image-gallery', 'ImageGalleryController@index');
 Route::post('/image-gallery', 'ImageGalleryController@upload');
 Route::delete('/image-gallery/{id}', 'ImageGalleryController@destroy');
-Route::get('normalgallery', 'ImageGalleryController@index2');
+Route::get('normalgallery', 'NormalImageGalleryController@index');
 Route::get('adminwelcome', 'AdminController@getInsert');
 
 
