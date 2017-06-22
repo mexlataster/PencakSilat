@@ -25,6 +25,7 @@ input, textarea{
   margin-left: 125px;;
   position: absolute;
   margin-top: 25px;
+	font-family: 'Molengo', Georgia, Times, serif;
 }
 
 .links>a{
@@ -32,6 +33,7 @@ input, textarea{
 	font-size:20px;
 	padding:5px;
 	font-weight: lighter;
+	font-family: 'Molengo', Georgia, Times, serif;
 }
 
 .links>a:hover{
@@ -41,6 +43,7 @@ input, textarea{
 	padding:5px;
 	border-radius: 15px;
 	border:1px solid red;
+	font-family: 'Molengo', Georgia, Times, serif;
 }
 
 .text>h3{
@@ -81,7 +84,7 @@ a{
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 18px;
-} 
+}
 
 img.head{
 	padding:2px;
@@ -117,6 +120,7 @@ background-image: linear-gradient(
   margin-left:auto;
   margin-right:auto;
   width:1300px;
+
 }
 
 .main{
@@ -144,8 +148,7 @@ background-image: linear-gradient(
     rgba(255, 255, 255, 0.8) 0%,
     rgba(255, 255, 255, 0.8) 85%,
     rgba(255, 255, 255, 0.2) 95%,
-    rgba(255, 255, 255, 0.005) 100%
-);
+    rgba(255, 255, 255, 0.005) 100%);
 	width:1170px;
 	padding:25px;
 	height:2000px;
@@ -157,6 +160,9 @@ background-image: linear-gradient(
 	border-radius: 7px;
 	margin-top:-400px;
 	margin-bottom:75px;
+}
+.red{
+	color: red;
 }
 
 .footer{
@@ -173,8 +179,7 @@ background-image: linear-gradient(
 }
 
 .footer-right{
-  margin-left: 500px;
-  width:300px;
+
 }
 
 /*End of Home Page CSS*/
@@ -185,7 +190,7 @@ background-image: linear-gradient(
   border-radius: 25px;
   position: absolute;
   width:50%;
-  height: 80%;
+  height: 70%;
   z-index: 15;
   top: 20%;
   left: 25%;

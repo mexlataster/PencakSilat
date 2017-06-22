@@ -1,4 +1,6 @@
 <!doctype html>
+<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
     <head>
         <meta charset="utf-8">
@@ -11,7 +13,7 @@
       <div class="layer">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links"> 
+                <div class="top-right links">
                     @if (Auth::check())
 
                     @else
@@ -51,16 +53,15 @@
           <div class="footer">
               <div class="footer-left">
                   <h2>Contact</h2>
-                  <h3>Lestijden:</h3>
+                  <h3 class="red">Lestijden:</h3>
                   <p>Iedere woensdag van 19:00 tot 20:30</p>
 
-                  <h3>Adres:</h3>
+                  <h3 class="red">Adres:</h3>
                   <p>(Gymzaal Bavinkschool)<br>
                   Kolfstraat tegenover<br> parkeergarage Drie Vriendenhof</p><br>
               </div>
 
-              <div class="footer-right">
-                  <h2>Links</h2>
+
 
               </div>
           </div>
