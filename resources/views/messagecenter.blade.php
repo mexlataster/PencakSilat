@@ -15,20 +15,26 @@
 
 <div class="messagebox">
     <table>
+      @foreach($Contacts as $value)
         <tr>
-            <td>Naam:</td>
+            <td>Naam: {{$value->name}}</td>
         </tr>
         <tr>
-            <td>E-mailadres:</td>
+            <td>E-mailadres:{{$value->email}}</td>
         </tr>
         <tr>
-            <td>Bericht:</td>
+            <td>Bericht:{{$value->message}}</td>
             <tr>
-              <td>Created At:</td>
+              <td>Created At:{{$value->created_at}}</td>
             </tr>
+
+            <tr>
+              <td></td>
+            </tr>
+        @endforeach
     </table>
 
-    
+
 </div>
 
 

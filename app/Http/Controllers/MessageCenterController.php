@@ -11,7 +11,8 @@ class MessageCenterController extends Controller
     public function getInsert()
     {
       $result = Contact::all();
-      return view('messagecenter',['contacts' => $result]);
+      
+      return view('messagecenter',['Contacts' => $result]);
     }
 
 }
