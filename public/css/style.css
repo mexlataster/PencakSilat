@@ -206,7 +206,7 @@ background-image: linear-gradient(
   z-index: 15;
   top: 20%;
   left: 25%;
-  border:1px solid white;
+	border: 2px solid rgba(255, 255, 255, 0.1);
   padding:25px;
   text-align: left;
 }
@@ -228,16 +228,15 @@ background-image: linear-gradient(
 
 /*Contact Page CSS*/
 .container{
-  padding: 15px;
+  padding: 32px;
   background-color: rgba(255,255,255,0.3);
-  border-radius: 25px;
   position: absolute;
   width: 900px;
   height: 650px;
   z-index: 15;
   top: 20%;
   left: 25%;
-  border:1px solid white;
+	border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .text-input{

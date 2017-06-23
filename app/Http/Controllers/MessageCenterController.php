@@ -6,12 +6,13 @@ use App\User;
 use App\Contact;
 
 
-class AdminController extends Controller
+class MessageCenterController extends Controller
 {
     public function getInsert()
     {
       $result = Contact::all();
-      return view('adminwelcome',['contacts' => $result]);
+      
+      return view('messagecenter',['Contacts' => $result]);
     }
 
 }
