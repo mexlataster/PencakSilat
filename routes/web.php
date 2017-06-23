@@ -26,6 +26,9 @@ Route::get('/user', 'ProfileController@index');
 
 Route::get('/adminwelcome', function() {
     return view('/adminwelcome');
+});
+
+
 Route::get('/messagecenter', function() {
     return view('/messagecenter');
 });
