@@ -19,8 +19,8 @@ Route::get('/normalgallery', function () {
     return view('normalgallery');
 });
 
-Route::get('/adminwelcome', function() {
-    return view('/adminwelcome');
+Route::get('/messagecenter', function() {
+    return view('/messagecenter');
 });
 
 
@@ -32,7 +32,7 @@ Route::get('/image-gallery', 'ImageGalleryController@index');
 Route::post('/image-gallery', 'ImageGalleryController@upload');
 Route::delete('/image-gallery/{id}', 'ImageGalleryController@destroy');
 Route::get('normalgallery', 'NormalImageGalleryController@index');
-Route::get('adminwelcome', 'AdminController@getInsert');
+Route::get('messagecenter', 'MessageCenterController@getInsert');
 
 
 

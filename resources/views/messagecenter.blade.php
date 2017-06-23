@@ -17,7 +17,6 @@
     <table>
         <tr>
             <td>Naam:</td>
-
         </tr>
         <tr>
             <td>E-mailadres:</td>
@@ -28,6 +27,8 @@
               <td>Created At:</td>
             </tr>
     </table>
+
+    
 </div>
 
 
