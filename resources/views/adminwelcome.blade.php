@@ -17,7 +17,7 @@
     <table>
         <tr>
             <td>Naam:</td>
-            {{ <?php echo $name->name ?>}}
+
         </tr>
         <tr>
             <td>E-mailadres:</td>
@@ -29,6 +29,7 @@
             </tr>
     </table>
 </div>
+
 
 
 

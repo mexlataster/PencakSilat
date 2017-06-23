@@ -33,7 +33,7 @@
 
     <div class="menu">
           <a href="../"><img src="/images/head.png" class="head"></a>
-      
+
     </div>
 
 <div class="container">
@@ -93,7 +93,6 @@
                     <form action="{{ url('image-gallery',$image->id) }}" method="POST">
                     <input type="hidden" name="_method" value="delete">
                     {!! csrf_field() !!}
-
                     <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
                     </form>
                 </div> <!-- col-6 / end -->

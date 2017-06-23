@@ -24,6 +24,8 @@ Route::get('/adminwelcome', function() {
 });
 
 
+
+
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('/image-gallery', 'ImageGalleryController@index');
