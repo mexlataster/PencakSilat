@@ -25,15 +25,14 @@ input, textarea{
   margin-left: 125px;;
   position: absolute;
   margin-top: 25px;
-	font-family: 'Molengo', Georgia, Times, serif;
 }
 
 .links>a{
 	margin-right:125px;
-	font-size:20px;
+	font-size:20px !important;
 	padding:5px;
 	font-weight: lighter;
-	font-family: 'Molengo', Georgia, Times, serif;
+	font-family: 'Molengo', Georgia, Times, serif !important;
 }
 
 .links>a:hover{
@@ -43,7 +42,6 @@ input, textarea{
 	padding:5px;
 	border-radius: 15px;
 	border:1px solid red;
-	font-family: 'Molengo', Georgia, Times, serif;
 }
 
 .text>h3{
@@ -128,6 +126,10 @@ background-image: linear-gradient(
   margin-bottom:700px;
 }
 
+.manyang-main{
+	width:200px;
+}
+
 .text{
   border-radius: 15px;
   width:1025px;
@@ -161,7 +163,9 @@ background-image: linear-gradient(
 	border-radius: 7px;
 	margin-top:-200px;
 	margin-bottom:75px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.0);
 }
+
 .red{
 	color: red;
 }
@@ -175,12 +179,19 @@ background-image: linear-gradient(
 
 .footer-left{
 	padding-top:30px;
-	margin-left:75px;
+	margin-left:125px;
 	width:300px;
 }
 
 .footer-right{
+  width: 300px;
+  margin-left: 60%;
+  margin-top: -265px;
+  text-align: center;
+}
 
+.footer-right>a:hover{
+	text-decoration: red solid underline;
 }
 
 /*End of Home Page CSS*/

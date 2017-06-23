@@ -2,6 +2,7 @@
 
 @section('content')
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
 <div class="layer">
     <div class="menu">
           <a href="../"><img src="/images/head.png" class="head"></a>

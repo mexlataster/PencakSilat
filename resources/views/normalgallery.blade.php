@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
 
     <!-- References: https://github.com/fancyapps/fancyBox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">

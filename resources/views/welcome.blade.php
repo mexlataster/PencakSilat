@@ -37,9 +37,9 @@
               <div class="title">
                   <h2>Pencak Silat</h2>
               </div>
-              <hr><br><br>
+              <hr><br><br><br>
             <div class="text">
-                <h2>Manyang</h2><br>
+                <img src="/images/manyang.png" class="manyang-main"><br><br>
               <button class="button-info" type="button">KLIK HIER OM VERDER TE GAAN</button>
             </div>
           </div>
@@ -61,8 +61,14 @@
                   Kolfstraat tegenover<br> parkeergarage Drie Vriendenhof</p><br>
               </div>
 
+              <div class="footer-right">
+                  <h2>Links</h2>
+                  <h3 class="red">NPSF</h3>
+                  <a href="http://www.npsf.nl/" target="_blank">www.npsf.nl</a><br><br>
 
-
+                  <h3 class="red">Manyang</h3>
+                  <a href="https://www.manyang.nl/" target="_blank">www.manyang.nl</a>
+              </div>
               </div>
           </div>
 
