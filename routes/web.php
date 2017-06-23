@@ -19,6 +19,11 @@ Route::get('/normalgallery', function () {
     return view('normalgallery');
 });
 
+//profile route
+Route::get('/user', 'ProfileController@index');
+
+
+
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('/image-gallery', 'ImageGalleryController@index');

@@ -28,6 +28,16 @@
                         @endif
                 </div>
 
+                <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
+                    <h4>Achternaam:</h4>
+                        <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required autofocus>
+                        @if ($errors->has('lastname'))
+                            <span>
+                                <strong>{{ $errors->first('lastname') }}</strong>
+                            </span>
+                        @endif
+                </div>
+
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <h4>E-Mailadres:</h4>
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
