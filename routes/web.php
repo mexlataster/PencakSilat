@@ -29,6 +29,7 @@ Route::get('/adminwelcome', function() {
 });
 
 
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 Route::get('/getInsert', 'CrudController@getInsert');

@@ -20,8 +20,12 @@
       <div class="links">
           <a href="{{ url('/normalgallery') }}">Normale Gallerij</a>
           <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
+          @if (!Auth::check())
           <a href="{{ url('/login') }}">Login</a>
           <a href="{{ url('/register') }}">Registreren</a>
+          @else
+          <a href="{{ url('/logout') }}">Uitloggen</a>
+          @endif
           <a href="{{ url('/getInsert') }}">Contact</a>
       </div>
     </div>

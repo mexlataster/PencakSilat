@@ -103,7 +103,7 @@
                             </div>
                         </div> 
                         //Hidden form om de user-type mee tegeven, wat standaard op normal staat.
-                        {{ Form::hidden('user-type', 'normal') }}
+                        {{ Form::hidden('user_type', 'normal') }}
                         <br>
 
 
