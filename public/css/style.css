@@ -19,6 +19,7 @@ input, textarea{
 }
 
 /*Home Page CSS*/
+
 .links{
   display:inline;
   margin-left: 125px;;
@@ -28,9 +29,10 @@ input, textarea{
 
 .links>a{
 	margin-right:125px;
-	font-size:20px;
+	font-size:20px !important;
 	padding:5px;
 	font-weight: lighter;
+	font-family: 'Molengo', Georgia, Times, serif !important;
 }
 
 .links>a:hover{
@@ -90,13 +92,18 @@ img.head{
 }
 
 .layer {
-   background-color:rgba(0,0,0, 0.6);
+background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.2) 90%,
+    rgba(0, 0, 0, 0.05) 100%
+);
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
-
+   height:100%;
 }
 
 .text>button{
@@ -111,10 +118,16 @@ img.head{
   margin-left:auto;
   margin-right:auto;
   width:1300px;
+
 }
 
 .main{
   margin-top:275px;
+  margin-bottom:700px;
+}
+
+.manyang-main{
+	width:200px;
 }
 
 .text{
@@ -130,11 +143,87 @@ img.head{
 	font-family: bold;
 	font-size: 48px;
 }
+
+.info{
+background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 85%,
+    rgba(255, 255, 255, 0.2) 95%,
+    rgba(255, 255, 255, 0.005) 100%);
+);
+	width:1170px;
+	padding:25px;
+	height:2000px;
+	color:black;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	top:0px;
+	border-radius: 7px;
+	margin-top:-200px;
+	margin-bottom:75px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.0);
+}
+
+.red{
+	color: red;
+}
+
+.footer{
+	width:100%;
+	height:308px;
+	background-color: #2b2d36;
+	border-radius: 7px;
+}
+
+.footer-left{
+	padding-top:30px;
+	margin-left:125px;
+	width:300px;
+}
+
+.footer-right{
+  width: 300px;
+  margin-left: 60%;
+  margin-top: -265px;
+  text-align: center;
+}
+
+.footer-right>a:hover{
+	text-decoration: red solid underline;
+}
+
 /*End of Home Page CSS*/
 /*Normal Gallery CSS*/
-.picturebox{
-	
+
+.imagecontainer{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
+  position: absolute;
+  width:50%;
+  height: 70%;
+  z-index: 15;
+  top: 20%;
+  left: 25%;
+  border:1px solid white;
+  padding:25px;
+  text-align: left;
 }
+
+.img-responsive{
+	margin: 17px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.images{
+	max-width: 850px;
+	display: initial;
+}
+
+/*End of Normal gallery CSS*/
 
 
 /*Contact Page CSS*/
@@ -152,8 +241,20 @@ img.head{
 }
 
 .text-input{
-	margin-left: auto;
+	margin-left: 33%;
   width: 650px;
+
+}
+
+.contact-info{
+	float:left;
+	width:30%;
+	margin-top:100px;
+}
+
+#mapid{
+		border-radius: 8px;
+	margin-top:15px;
 }
 
 .submit-button{

@@ -2,6 +2,7 @@
 
 @section('content')
     <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
 <div class="layer">
     <div class="menu">
           <a href="../"><img src="/images/head.png" class="head"></a>
@@ -13,11 +14,12 @@
           <a href="{{ url('/getInsert') }}">Contact</a>
       </div>
     </div>
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
     <div class="container" id="login-container">
         <h1 style="text-align: center;">Registreren</h1><br>
             <form class="center-form" role="form" method="POST" action="{{ route('register') }}">
-                {{csrf_field()}}
-
+              {{ csrf_field() }}
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <h4>Naam:</h4>
                         <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>

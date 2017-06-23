@@ -19,15 +19,8 @@ class ImageGalleryController extends Controller
 
 
     	return view('image-gallery',compact('images'));
-      
-    }
 
-    public function index2()
-    {
-      $images = ImageGallery::get();
-      return view('normalgallery', compact('images'));
     }
-
     /**
      * Upload image function
      *

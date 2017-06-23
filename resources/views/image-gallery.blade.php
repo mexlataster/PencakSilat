@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>Pencak Silat Gallery</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
     <!-- References: https://github.com/fancyapps/fancyBox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,6 +32,11 @@
 </head>
 <body>
 
+    <div class="menu">
+          <a href="../"><img src="/images/head.png" class="head"></a>
+
+    </div>
+
 <div class="container">
 
     <h3>Pencak Silat - Gallery</h3>
@@ -42,7 +49,7 @@
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
                 <ul>
                     @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
+                        <li>Your picture is too big(please put in a smaller picture)</li>
                     @endforeach
                 </ul>
             </div>
@@ -96,6 +103,8 @@
         </div> <!-- list-group / end -->
     </div> <!-- row / end -->
 </div> <!-- container / end -->
+
+
 
 </body>
 <script type="text/javascript">

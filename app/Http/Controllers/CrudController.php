@@ -13,7 +13,6 @@ class CrudController extends Controller
       return view('user.getInsert',compact('roles'));
     }
 
-
     public function postInsert(Request $r){
 
       Contact::insert(['name'=>$r->name,
