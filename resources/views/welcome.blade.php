@@ -37,7 +37,7 @@
                   <a href="{{ url('/getInsert') }}">Contact</a>
                   <! Check of er een user is ingelogd, en daarna checken of de user admin is>
                   @if (isset(Auth::user()->user_type))
-                  @if (Auth::user()->user_type == 'admin')
+                  @if (Auth::user()->user_type == 'normal')
                   <a href="{{ url('/') }}">Admin</a>
                   @endif
                   @endif

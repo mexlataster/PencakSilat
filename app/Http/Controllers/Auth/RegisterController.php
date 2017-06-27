@@ -54,7 +54,7 @@ class RegisterController extends Controller
             'lastname' => 'required|string|max:255',
             'adres' => 'required|string|max:255',
             'woontplaats' => 'required|string|max:255',
-            'user-type' => 'required|string|max:255',
+            'user_type' => 'required|string|max:255',
         ]);
     }
 
@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'lastname' => $data['lastname'],
             'adres' => $data['adres'],
             'woontplaats' => $data['woontplaats'],
-            'user-type' => $data['user-type'],
+            'user_type' => $data['user_type'],
         ]);
     }
 }
