@@ -41,7 +41,7 @@
                   <a href="{{ url('/') }}">Admin</a>
                   @endif
                   @endif
-              
+
 
               </div>
             </div>
