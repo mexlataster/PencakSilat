@@ -87,7 +87,7 @@
                             </div>
                         </div>
 
-                        
+
 
                         <div class="form-group{{ $errors->has('woontplaats') ? ' has-error' : '' }}">
                             <label for="woontplaats" class="col-md-4 control-label">Woonplaats</label>
@@ -101,7 +101,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div> 
+                        </div>
 
                         {{ Form::hidden('user_type', 'normal') }}
                         <br>
