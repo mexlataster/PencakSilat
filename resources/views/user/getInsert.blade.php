@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
    integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
-   crossorigin=""></script> 
+   crossorigin=""></script>
 
   </head>
   <body>
@@ -16,7 +16,7 @@
       <div class="menu">
           <a href="../"><img src="/images/head.png" class="head"></a>
         <div class="links">
-            <a href="{{ url('/normalgallery') }}">Normale Gallerij</a>
+            <a href="/normalgallery">Normale Gallerij</a>
             <a href="{{ url('/image-gallery') }}">Admin Gallerij</a>
             <a href="{{ url('/login') }}">Login</a>
             <a href="{{ url('/register') }}">Registreren</a>
@@ -46,6 +46,7 @@
               <h1>Contact Pagina</h1>
                 <form action="{{ url('postInsert')}}" method="POST">
                    {{ csrf_field() }}
+      
                       <table>
                           <tr>
                               <td>Naam:</td>
@@ -66,6 +67,9 @@
             </div>
           </div>
     </div>
+
+
+
     <div class="map">
       <script>
       var mymap = L.map('mapid').setView([51.813816, 4.669590], 20);

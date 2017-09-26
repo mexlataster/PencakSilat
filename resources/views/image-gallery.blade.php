@@ -94,12 +94,24 @@
                     <form action="{{ url('image-gallery',$image->id) }}" method="POST">
                     <input type="hidden" name="_method" value="delete">
                     {!! csrf_field() !!}
-                    <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+
+                              <script>
+              function ConfirmDelete()
+              {
+                var x = confirm("Weet je zeker dat je de foto wilt verwijderen?");
+                if (x)
+                    return true;
+                else
+                  return false;
+              }
+          </script>
+
+            <button Onclick="return ConfirmDelete();" type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove" ></i></button>
+
                     </form>
                 </div> <!-- col-6 / end -->
                 @endforeach
             @endif
-
         </div> <!-- list-group / end -->
     </div> <!-- row / end -->
 </div> <!-- container / end -->

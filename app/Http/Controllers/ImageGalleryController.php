@@ -51,6 +51,9 @@ class ImageGalleryController extends Controller
     public function destroy($id)
     {
     	ImageGallery::find($id)->delete();
+      if ($id) {
+
+      }
     	return back()
     		->with('success','Image removed successfully.');
     }

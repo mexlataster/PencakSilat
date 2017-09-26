@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -30,13 +30,17 @@
                 </div><hr>
                 <br><br>
                 @if($images->count())
-                    @foreach($images as $image)
+
                     <div class="images">
+                      @foreach($images as $image)
                         <a class="thumbnail fancybox" rel="ligthbox" href="/images/{{ $image->image }}">
-                            <img class="img-responsive" alt="" src="/images/{{ $image->image }}" />
-                            @endforeach
-                        @endif
-              </div>
+                          <img class="img-responsive" alt="" src="/images/{{ $image->image }}" />
+                        </a>
+                      @endforeach
+                    </div>
+
+                @endif
+
             </div>
 
             </body>

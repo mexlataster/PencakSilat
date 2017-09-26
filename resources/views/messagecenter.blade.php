@@ -15,6 +15,8 @@
 
 <div class="messagebox">
     <table>
+
+      <input type="hidden" name="_token" value="{{ csrf_token() }}">
       @foreach($Contacts as $value)
         <tr>
             <td>Naam: {{$value->name}}</td>
