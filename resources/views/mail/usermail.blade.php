@@ -5,6 +5,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
+        <style media="screen">
+        .inboxmessage{
+          border: 1px solid black;
+        }
+
+        </style>
     </head>
     <body id="app">
         <div class="container">
@@ -32,20 +38,19 @@
                 <input type="submit" value="Submit" class="submit-button">
               </form>
               <table>
-
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     @foreach($Mails as $value)
-                      <tr>
-                          <td>Naam: {{$value->user}}</td>
+                      <tr class="inboxmessage">
+                          <th class="inboxmessage">Naam : </th>
+                          <th class="inboxmessage">Onderwerp : </th>
                       </tr>
-                      <tr>
-                        <td>Onderwerp: {{$value->onderwerp}}</td>
+                      <tr class="inboxmessage">
+                        <td class="inboxmessage">Naam: {{$value->user}}</td>
+                        <td class="inboxmessage">Onderwerp: {{$value->onderwerp}}</td>  
                       </tr>
-                      <tr>
-                          <td>Bericht:{{$value->message}}</td>
-                          </tr>
                       @endforeach
                   </table>
+
             </div>
 
 

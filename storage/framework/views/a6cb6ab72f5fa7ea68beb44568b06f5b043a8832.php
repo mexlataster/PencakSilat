@@ -5,6 +5,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
+        <style media="screen">
+        .inboxmessage{
+          border: 1px solid black;
+        }
+
+        </style>
     </head>
     <body id="app">
         <div class="container">
@@ -33,20 +39,19 @@
                 <input type="submit" value="Submit" class="submit-button">
               </form>
               <table>
-
                     <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                     <?php $__currentLoopData = $Mails; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                      <tr>
-                          <td>Naam: <?php echo e($value->user); ?></td>
+                      <tr class="inboxmessage">
+                          <th class="inboxmessage">Naam : </th>
+                          <th class="inboxmessage">Onderwerp : </th>
                       </tr>
-                      <tr>
-                        <td>Onderwerp: <?php echo e($value->onderwerp); ?></td>
+                      <tr class="inboxmessage">
+                        <td class="inboxmessage">Naam: <?php echo e($value->user); ?></td>
+                        <td class="inboxmessage">Onderwerp: <?php echo e($value->onderwerp); ?></td>  
                       </tr>
-                      <tr>
-                          <td>Bericht:<?php echo e($value->message); ?></td>
-                          </tr>
                       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                   </table>
+
             </div>
 
 
