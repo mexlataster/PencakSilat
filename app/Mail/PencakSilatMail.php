@@ -28,6 +28,15 @@ class PencakSilatMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+      $address = 'kip.kippeneieren@gmail.com';
+      $name = 'Mex Lataster';
+      $subject = 'Test';
+
+  return $this->view('emails.pencaksilatmail')
+              ->from($address, $name)
+              ->cc($address, $name)
+              ->bcc($address, $name)
+              ->replyTo($address, $name)
+              ->subject($subject);
     }
 }

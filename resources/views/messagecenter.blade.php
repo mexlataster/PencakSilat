@@ -13,31 +13,10 @@
 
 
 
-<div class="messagebox">
-    <table>
-
-      <input type="hidden" name="_token" value="{{ csrf_token() }}">
-      @foreach($Contacts as $value)
-        <tr>
-            <td>Naam: {{$value->name}}</td>
-        </tr>
-        <tr>
-            <td>E-mailadres:{{$value->email}}</td>
-        </tr>
-        <tr>
-            <td>Bericht:{{$value->message}}</td>
-            <tr>
-              <td>Created At:{{$value->created_at}}</td>
-            </tr>
-
-            <tr>
-              <td></td>
-            </tr>
-        @endforeach
-    </table>
 
 
-</div>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/tgIqecROs5M" frameborder="0" allowfullscreen></iframe>
+
 
 
 

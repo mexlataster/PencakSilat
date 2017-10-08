@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  
           <div class="main">
               <div class="title">
                   <h2>Pencak Silat</h2>
@@ -18,4 +19,3 @@
             Ook nu nog geven wij aan sommige technieken dierenbenamingen, zoals harimau of macan (tijger), ular (slang), monjet of keteh (aap) en manyang (wesp).
           </div>
 @endsection
-

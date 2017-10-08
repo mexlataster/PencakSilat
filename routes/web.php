@@ -30,6 +30,7 @@ Route::get('/messagecenter', function() {
     return view('/messagecenter');
 });
 
+
 Route::get('/inschrijven', function () {
   return view('/inschrijven');
 });
