@@ -30,6 +30,12 @@ Route::get('/messagecenter', function() {
     return view('/messagecenter');
 });
 
+// De view van de Gebruiker
+
+Route::get('/usermail', function() {
+    return view('/mail/usermail');
+});
+
 
 Route::get('/inschrijven', function () {
   return view('/inschrijven');
@@ -51,6 +57,10 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/getInschrijving', 'InschrijvingController@getInschrijving');
 Route::post('/postInschrijving', 'InschrijvingController@postInschrijving');
+ // De Gebruiker Mailer //
+Route::get('/getmailInsert', 'UsermailController@getmailInsert');
+Route::post('/postmailInsert', 'UsermailController@postmailInsert');
+
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
 Route::get('/image-gallery', 'ImageGalleryController@index');
