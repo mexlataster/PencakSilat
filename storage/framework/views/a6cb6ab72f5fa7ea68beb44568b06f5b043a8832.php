@@ -22,6 +22,10 @@
                             <td><input type="email" name="user" id="user"></td>
                         </tr>
                         <tr>
+                          <td>Onderwerp:</td>
+                          <td><input type="text" name="onderwerp" id="onderwerp"></td>
+                        </tr>
+                        <tr>
                             <td>Bericht:</td>
                             <td><textarea rows="4" cols="50" name="message" id="message" class="message"></textarea></td>
                         </tr>
@@ -34,6 +38,9 @@
                     <?php $__currentLoopData = $Mails; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                       <tr>
                           <td>Naam: <?php echo e($value->user); ?></td>
+                      </tr>
+                      <tr>
+                        <td>Onderwerp: <?php echo e($value->onderwerp); ?></td>
                       </tr>
                       <tr>
                           <td>Bericht:<?php echo e($value->message); ?></td>

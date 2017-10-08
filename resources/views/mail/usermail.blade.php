@@ -21,6 +21,10 @@
                             <td><input type="email" name="user" id="user"></td>
                         </tr>
                         <tr>
+                          <td>Onderwerp:</td>
+                          <td><input type="text" name="onderwerp" id="onderwerp"></td>
+                        </tr>
+                        <tr>
                             <td>Bericht:</td>
                             <td><textarea rows="4" cols="50" name="message" id="message" class="message"></textarea></td>
                         </tr>
@@ -33,6 +37,9 @@
                     @foreach($Mails as $value)
                       <tr>
                           <td>Naam: {{$value->user}}</td>
+                      </tr>
+                      <tr>
+                        <td>Onderwerp: {{$value->onderwerp}}</td>
                       </tr>
                       <tr>
                           <td>Bericht:{{$value->message}}</td>

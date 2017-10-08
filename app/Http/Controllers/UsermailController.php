@@ -18,8 +18,8 @@ class UsermailController extends Controller
     public function postInsert(Request $r){
 
       Mail::insert(['user'=>$r->user,
+                    'onderwerp'=>$r->onderwerp,
                      'message'=>$r->message]);
-      \Session::flash('flash_message','Je Mail is verzonden! We reageren zo snel mogelijk!');
                      return back();
     }
 

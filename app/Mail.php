@@ -8,6 +8,6 @@ class Mail extends Model
 {
     protected $table = 'usermail';
 
-    protected $fillable = ['user','message'];
+    protected $fillable = ['user','onderwerp','message'];
 
 }
