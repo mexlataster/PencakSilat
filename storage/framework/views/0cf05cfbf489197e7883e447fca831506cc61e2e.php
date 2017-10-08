@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Modal Boxes</title>
+        <title>User Mail</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
@@ -12,7 +12,7 @@
                 <h1>Inbox</h1>
             </div>
             <div class="inbox">
-              <form action="<?php echo e(url('postmailInsert')); ?>" method="POST">
+              <form action="<?php echo e(url('getmailInsert')); ?>" method="GET">
                  <?php echo e(csrf_field()); ?>
 
 
@@ -29,8 +29,6 @@
                 <input type="submit" value="Submit" class="submit-button">
               </form>
             </div>
-            
-        </div>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.14/vue.min.js"></script>

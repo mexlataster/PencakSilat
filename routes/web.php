@@ -30,11 +30,10 @@ Route::get('/messagecenter', function() {
     return view('/messagecenter');
 });
 
+
 // De view van de Gebruiker
 
-Route::get('/usermail', function() {
-    return view('/mail/usermail');
-});
+
 
 
 Route::get('/inschrijven', function () {
@@ -57,9 +56,12 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/getInschrijving', 'InschrijvingController@getInschrijving');
 Route::post('/postInschrijving', 'InschrijvingController@postInschrijving');
+
  // De Gebruiker Mailer //
-Route::get('/getmailInsert', 'UsermailController@getmailInsert');
-Route::post('/postmailInsert', 'UsermailController@postmailInsert');
+
+Route::get('/usermail', 'UsermailController@getInsert');
+Route::post('/postmailInsert', 'UsermailController@postInsert');
+Route::get('/usermail', 'UserMailController@fetchdata');
 
 Route::get('/getInsert', 'CrudController@getInsert');
 Route::post('/postInsert', 'CrudController@postInsert');
@@ -67,8 +69,9 @@ Route::get('/image-gallery', 'ImageGalleryController@index');
 Route::post('/image-gallery', 'ImageGalleryController@upload');
 Route::delete('/image-gallery/{id}', 'ImageGalleryController@destroy');
 Route::get('normalgallery', 'NormalImageGalleryController@index');
-Route::get('messagecenter', 'MessageCenterController@getInsert');
+// Route::get('messagecenter', 'MessageCenterController@getInsert');
 Route::resource('message' , 'MessageController');
+
 // Route::post('/inschrijfformulier', );
 
 

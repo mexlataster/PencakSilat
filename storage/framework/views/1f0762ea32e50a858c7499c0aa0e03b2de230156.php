@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-  
+
           <div class="main">
               <div class="title">
                   <h2>Pencak Silat</h2>
@@ -16,6 +16,8 @@
             Hierbij bestudeerden zij het gedrag van dieren, met in het bijzonder de overlevingstechnieken.<br>
             Ook nu nog geven wij aan sommige technieken dierenbenamingen, zoals harimau of macan (tijger), ular (slang), monjet of keteh (aap) en manyang (wesp).
           </div>
+
+          
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

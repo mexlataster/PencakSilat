@@ -3,16 +3,16 @@
 use Illuminate\Http\Request;
 use App\Role;
 use App\User;
-use App\Contact;
+use App\Mail;
 
 
 class MessageCenterController extends Controller
 {
     public function getInsert()
     {
-      $result = Contact::all();
-      
-      return view('messagecenter',['Contacts' => $result]);
+      $result = Mail::all();
+
+      return view('messagecenter',['Mails' => $result]);
     }
 
 }

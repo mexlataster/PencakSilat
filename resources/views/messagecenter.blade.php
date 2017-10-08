@@ -12,12 +12,18 @@
 
 
 
+    <table>
 
-
-
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/tgIqecROs5M" frameborder="0" allowfullscreen></iframe>
-
-
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+          @foreach($Mails as $value)
+            <tr>
+                <td>Naam: {{$value->user}}</td>
+            </tr>
+            <tr>
+                <td>Bericht:{{$value->message}}</td>
+                </tr>
+            @endforeach
+        </table>
 
 
 

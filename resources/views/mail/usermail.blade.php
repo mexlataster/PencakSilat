@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Modal Boxes</title>
+        <title>User Mail</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/style.css">
@@ -27,9 +27,19 @@
                     </table>
                 <input type="submit" value="Submit" class="submit-button">
               </form>
+              <table>
+
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    @foreach($Mails as $value)
+                      <tr>
+                          <td>Naam: {{$value->user}}</td>
+                      </tr>
+                      <tr>
+                          <td>Bericht:{{$value->message}}</td>
+                          </tr>
+                      @endforeach
+                  </table>
             </div>
-            
-        </div>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.14/vue.min.js"></script>

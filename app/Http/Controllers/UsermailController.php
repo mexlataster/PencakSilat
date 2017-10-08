@@ -4,21 +4,23 @@ use Illuminate\Http\Request;
 use App\Mail;
 class UsermailController extends Controller
 {
-    public function getmailInsert()
+    public function getInsert()
     {
-
       return view('mail.usermail');
     }
+    public function fetchdata()
+    {
+      $result = Mail::all();
 
-    public function postmailInsert(Request $r){
+      return view('mail.usermail',['Mails' => $result]);
+    }
+
+    public function postInsert(Request $r){
 
       Mail::insert(['user'=>$r->user,
                      'message'=>$r->message]);
-      \Session::flash('flash_message','Your email has been send! We hope to Contact you as soon as possible.');
+      \Session::flash('flash_message','Je Mail is verzonden! We reageren zo snel mogelijk!');
                      return back();
-
-
-
     }
 
 }
