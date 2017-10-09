@@ -102,8 +102,6 @@
                                 @endif
                             </div>
                         </div>
-
-                        {{ Form::hidden('user_type', 'normal') }}
                         <br>
 
 
